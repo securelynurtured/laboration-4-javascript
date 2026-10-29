@@ -8,7 +8,11 @@ const quantity = 7;
 // Beräknar totalpriset för alla produkter före moms.
 const totalPrice = price * quantity;
 
-// Skriver ut pris och antal med tydliga etiketter.
+// Beräknar totalpriset inklusive 25 procent moms.
+const totalPriceWithVat = totalPrice * 1.25;
+
+// Skriver ut pris, antal och beräknade totalpriser med tydliga etiketter.
 console.log("Pris: " + price + " kr");
 console.log("Antal: " + quantity);
 console.log("Totalt: " + totalPrice + " kr");
+console.log("Totalt inklusive moms: " + totalPriceWithVat + " kr");
