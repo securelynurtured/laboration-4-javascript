@@ -4,7 +4,9 @@
 // Sparar en exempelålder för att testa villkoret.
 const age = 18;
 
-// Kontrollerar om personen är under 18 år.
+// Kontrollerar om personen är barn eller vuxen.
 if (age < 18) {
     console.log("Barn");
+} else if (age < 65) {
+    console.log("Vuxen");
 }
