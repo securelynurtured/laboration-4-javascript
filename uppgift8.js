@@ -8,7 +8,12 @@ const book = {
     publicationYear: 1937
 };
 
-// Skriver ut bokens titel, författare och utgivningsår.
-console.log("Titel: " + book.title);
-console.log("Författare: " + book.author);
-console.log("Utgivningsår: " + book.publicationYear);
+// Tar emot ett bokobjekt och skriver ut dess information.
+function printBookInfo(bookInfo) {
+    console.log("Titel: " + bookInfo.title);
+    console.log("Författare: " + bookInfo.author);
+    console.log("Utgivningsår: " + bookInfo.publicationYear);
+}
+
+// Anropar funktionen med vår bok som argument.
+printBookInfo(book);
