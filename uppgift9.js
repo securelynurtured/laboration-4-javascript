@@ -17,5 +17,7 @@ function printPersonInfo(person) {
     }
 }
 
-// Testar funktionen med den första personen.
-printPersonInfo(people[0]);
+// Går igenom alla personer och anropar funktionen för var och en.
+for (let index = 0; index < people.length; index++) {
+    printPersonInfo(people[index]);
+}
