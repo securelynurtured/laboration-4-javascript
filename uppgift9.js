@@ -8,5 +8,14 @@ const people = [
     { name: "Markus", age: 16, city: "Härnösand" }
 ];
 
-// Kontrollerar att vi kan läsa den första personens namn och stad.
-console.log(people[0].name + " bor i " + people[0].city + ".");
+// Tar emot en person och skriver ut bostadsort och om personen är myndig.
+function printPersonInfo(person) {
+    if (person.age >= 18) {
+        console.log(person.name + " bor i " + person.city + " och är myndig.");
+    } else {
+        console.log(person.name + " bor i " + person.city + " och är inte myndig.");
+    }
+}
+
+// Testar funktionen med den första personen.
+printPersonInfo(people[0]);
