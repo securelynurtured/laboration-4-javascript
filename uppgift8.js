@@ -8,5 +8,7 @@ const book = {
     publicationYear: 1937
 };
 
-// Skriver ut bokens titel.
-console.log(book.title);
+// Skriver ut bokens titel, författare och utgivningsår.
+console.log("Titel: " + book.title);
+console.log("Författare: " + book.author);
+console.log("Utgivningsår: " + book.publicationYear);
